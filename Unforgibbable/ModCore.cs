@@ -4,14 +4,14 @@ using BepInEx.Configuration;
 using HarmonyLib;
 using ServerSync;
 
-namespace ModFrame
+namespace Unforgibbable
 {
     [BepInPlugin(ModGUID, ModName, ModVersion)]
-    public class NewMod : BaseUnityPlugin
+    public class UnforgibbableMod : BaseUnityPlugin
     {
-        private const string ModName = "New Mod";
-        private const string ModVersion = "1.0";
-        private const string ModGUID = "some.new.guid";
+        private const string ModName = "UnforgibbableMod";
+        internal const string ModVersion = "0.0.1";
+        private const string ModGUID = "com.zarboz.UnforgibbableMod";
         private static Harmony harmony = null!;
         ConfigSync configSync = new(ModGUID) 
             { DisplayName = ModName, CurrentVersion = ModVersion, MinimumRequiredVersion = ModVersion};
