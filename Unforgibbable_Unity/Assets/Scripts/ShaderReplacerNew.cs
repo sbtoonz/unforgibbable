@@ -53,6 +53,9 @@ public class ShaderReplacerNew : MonoBehaviour
         if (IsHeadlessMode()) return;
         if(_renderers.Length <=0) return;
         if(!this.gameObject.activeInHierarchy)return;
+#if UNITY_EDITOR
+        return;
+#endif
         foreach (var renderer in _renderers)
         {
             if(renderer == null) continue;
