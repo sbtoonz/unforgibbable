@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1577299715
+CRC: 89442921
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fded18b0616766bb8ea7d5ec8c16232f
+    Hash: bbe32ac6a5a21d26daf8de76e0a5753d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 11ecd06167b61452a5bae1990d6b055b
+    Hash: 58d7c0b3fe0eb1ffa9c13fb9a584883c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -23,6 +23,10 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 54
   Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
   Script: {fileID: -697670096, guid: 1e5eba4f196255a48a608a7b9d58fac4, type: 3}
 - Class: 114
@@ -30,8 +34,22 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1109157524, guid: 1e5eba4f196255a48a608a7b9d58fac4, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 40fb77e8476cf8946b55239dcac0eda5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 276f99ff17b55af4888103647be0c8fb, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 128
   Script: {instanceID: 0}
 - Class: 136
   Script: {instanceID: 0}
@@ -39,13 +57,68 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 144
   Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Unforgibbable
   ClassName: ShaderType
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FaceInfo_Legacy
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FontAssetCreationSettings
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.KerningTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Character
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontFeatureTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontWeightPair
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphAdjustmentRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphPairAdjustmentRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphValueRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.VertexGradient
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.TextCoreModule
+  ClassName: UnityEngine.TextCore.FaceInfo
+- AssemblyName: UnityEngine.TextCoreModule
+  ClassName: UnityEngine.TextCore.Glyph
+- AssemblyName: UnityEngine.TextCoreModule
+  ClassName: UnityEngine.TextCore.GlyphMetrics
+- AssemblyName: UnityEngine.TextCoreModule
+  ClassName: UnityEngine.TextCore.GlyphRect
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
 - AssemblyName: assembly_valheim
   ClassName: EffectList
+- AssemblyName: assembly_valheim
+  ClassName: EffectList/EffectData
 - AssemblyName: assembly_valheim
   ClassName: Gibber/GibbData
 Assets:
 - Assets/Prefab_Instance/deer_gibs.prefab
+- Assets/Prefab_Instance/DevUI.prefab
 Dependencies: []

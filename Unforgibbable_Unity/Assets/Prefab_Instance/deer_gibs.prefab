@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5893526769632943822}
   - component: {fileID: 2816935774930207643}
-  - component: {fileID: 74880333859960331}
   m_Layer: 0
   m_Name: deer_gib01
   m_TagString: Untagged
@@ -86,22 +85,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.4359157, y: -0.1147272, z: -0.029296331}
     m_Extent: {x: 0.5027491, y: 0.4378659, z: 0.21418095}
   m_DirtyAABB: 0
---- !u!54 &74880333859960331
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74880333859960330}
-  serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &277252676456430967
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,12 +156,12 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277252676456430967}
-  m_ConnectedBody: {fileID: 6733617817958262917}
+  m_ConnectedBody: {fileID: 2650263189572266336}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.4572128, y: -0.06085378, z: 0.45434195}
+  m_ConnectedAnchor: {x: 0.4861485, y: 0.31139702, z: -0.000000030517587}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -222,7 +205,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2249522159778061693}
   - component: {fileID: 2223123868458459595}
-  - component: {fileID: 508330281154199937}
   m_Layer: 0
   m_Name: deer_gib_05
   m_TagString: Untagged
@@ -299,22 +281,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.4516527, y: 0.18452698, z: 0.014381379}
     m_Extent: {x: 0.6622687, y: 0.5464381, z: 0.1563739}
   m_DirtyAABB: 0
---- !u!54 &508330281154199937
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508330281154199936}
-  serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &1543464509822135236
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,10 +333,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_punchEffector:
-    m_effectPrefabs: []
+    m_effectPrefabs:
+    - m_prefab: {fileID: 0}
+      m_enabled: 1
+      m_variant: 0
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform: 
   m_gibHitEffect: {fileID: 0}
   m_gibDestroyEffect: {fileID: 0}
-  m_gibHitDestroyChance: 0
+  m_gibHitDestroyChance: 0.05
   m_gibbs:
   - m_object: {fileID: 7528333054188657804}
     m_chanceToSpawn: 1
@@ -384,10 +359,10 @@ MonoBehaviour:
     m_chanceToSpawn: 1
   - m_object: {fileID: 7528333054990766143}
     m_chanceToSpawn: 1
-  m_minVel: 2.5
-  m_maxVel: 7.5
-  m_maxRotVel: 50
-  m_impactDirectionMix: 10
+  m_minVel: 11
+  m_maxVel: 11
+  m_maxRotVel: 295
+  m_impactDirectionMix: 418
   m_timeout: 15
   m_delay: 0.15
   m_chanceToRemoveGib: 0
@@ -544,7 +519,8 @@ GameObject:
   - component: {fileID: 8880951406870452613}
   - component: {fileID: 6294938779585354530}
   - component: {fileID: 4703636352802514407}
-  - component: {fileID: 6645961807221443636}
+  - component: {fileID: 8553524728311168449}
+  - component: {fileID: 1080389239453503782}
   m_Layer: 0
   m_Name: deer_gib_01_bone1
   m_TagString: Untagged
@@ -590,12 +566,12 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2327664885320604807}
-  m_ConnectedBody: {fileID: 74880333859960331}
+  m_ConnectedBody: {fileID: 6769026626047835530}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.029296396, y: 0.6665844, z: 0.1364513}
+  m_ConnectedAnchor: {x: 0.37788838, y: 0.19635643, z: -0.00000003301458}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -629,7 +605,7 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!136 &6645961807221443636
+--- !u!136 &8553524728311168449
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -639,10 +615,23 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
-  m_Height: 0.51
+  m_Radius: 0.12
+  m_Height: 0.49
   m_Direction: 0
-  m_Center: {x: -0.19, y: -0.27, z: 0}
+  m_Center: {x: -0.15, y: 0, z: 0}
+--- !u!65 &1080389239453503782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327664885320604807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38, y: 0.25, z: 0.25}
+  m_Center: {x: -0.17, y: -0.28, z: 0}
 --- !u!1 &2650263189572266349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1083,7 @@ GameObject:
   - component: {fileID: 7440188513606666149}
   - component: {fileID: 6769026626047835530}
   - component: {fileID: 127804724366596014}
+  - component: {fileID: 8796119197914624118}
   m_Layer: 0
   m_Name: deer_gib_01_bone2
   m_TagString: Untagged
@@ -1191,6 +1181,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &8796119197914624118
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601823972418959248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.25, z: 0.25}
+  m_Center: {x: -0.12, y: -0.1, z: 0}
 --- !u!1 &6493596838831218949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1422,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5253094332676045249}
   - component: {fileID: 3027256713500462108}
-  - component: {fileID: 6733617817958262917}
   m_Layer: 0
   m_Name: deer_gib_03
   m_TagString: Untagged
@@ -1496,22 +1498,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.45439988, y: 0.095222324, z: -0.013289303}
     m_Extent: {x: 0.5933414, y: 0.40274292, z: 0.15825184}
   m_DirtyAABB: 0
---- !u!54 &6733617817958262917
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6733617817958262916}
-  serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &6825347091265904104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,12 +1569,12 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6825347091265904104}
-  m_ConnectedBody: {fileID: 7318491434671089018}
+  m_ConnectedBody: {fileID: 3733572543739039473}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.4125899, y: -0.0044846833, z: 0.41060042}
+  m_ConnectedAnchor: {x: 0.6060749, y: 0.042505756, z: 1.4758496e-16}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1788,12 +1774,12 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7148642045159991365}
-  m_ConnectedBody: {fileID: 8800391634278583254}
+  m_ConnectedBody: {fileID: 2141185617280082233}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0042150044, y: 0.27854943, z: 0.16848892}
+  m_ConnectedAnchor: {x: 0.24562375, y: -0.16647515, z: -0.00000003580398}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1851,7 +1837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1996127438412799899}
   - component: {fileID: 3304201459185004480}
-  - component: {fileID: 7318491434671089018}
   m_Layer: 0
   m_Name: deer_gib_02
   m_TagString: Untagged
@@ -1928,22 +1913,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.43718302, y: 0.00065764785, z: -0.0521584}
     m_Extent: {x: 0.68537414, y: 0.28404292, z: 0.15283647}
   m_DirtyAABB: 0
---- !u!54 &7318491434671089018
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7318491434671088965}
-  serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0.25
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &7528333053704533101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,6 +1923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333053704533090}
   - component: {fileID: 2344275428528939622}
+  - component: {fileID: 4749702304096191013}
   m_Layer: 0
   m_Name: Gib5
   m_TagString: Untagged
@@ -1993,6 +1963,22 @@ MonoBehaviour:
   - {fileID: 2223123868458459595}
   _shaderType: 4
   DebugOutput: 0
+--- !u!114 &4749702304096191013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528333053704533101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames:
+  - fx_TickBloodHIt
+  - bloodchunks
+  - BloodDrops
 --- !u!1 &7528333053961607537
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +1989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333053961607542}
   - component: {fileID: 5031716259295801034}
+  - component: {fileID: 1636525384357270351}
   m_Layer: 0
   m_Name: Gib2
   m_TagString: Untagged
@@ -2042,6 +2029,22 @@ MonoBehaviour:
   - {fileID: 3304201459185004480}
   _shaderType: 4
   DebugOutput: 0
+--- !u!114 &1636525384357270351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528333053961607537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames:
+  - fx_TickBloodHIt
+  - bloodchunks
+  - BloodDrops
 --- !u!1 &7528333054188657804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,6 +2055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333054188657805}
   - component: {fileID: 2012717359747506673}
+  - component: {fileID: 6144907154496301127}
   m_Layer: 0
   m_Name: Gib1
   m_TagString: Untagged
@@ -2091,6 +2095,22 @@ MonoBehaviour:
   - {fileID: 2816935774930207643}
   _shaderType: 4
   DebugOutput: 0
+--- !u!114 &6144907154496301127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528333054188657804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames:
+  - fx_TickBloodHIt
+  - bloodchunks
+  - BloodDrops
 --- !u!1 &7528333054642131373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333054642131362}
   - component: {fileID: 6775199120462881579}
+  - component: {fileID: 1297887563858745817}
   m_Layer: 0
   m_Name: Gib4
   m_TagString: Untagged
@@ -2140,6 +2161,22 @@ MonoBehaviour:
   - {fileID: 6381154506914925744}
   _shaderType: 4
   DebugOutput: 0
+--- !u!114 &1297887563858745817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528333054642131373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames:
+  - fx_TickBloodHIt
+  - bloodchunks
+  - BloodDrops
 --- !u!1 &7528333054990766143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,6 +2187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333054990766140}
   - component: {fileID: 7538206622090349333}
+  - component: {fileID: 5315365569748729217}
   m_Layer: 0
   m_Name: Gib6
   m_TagString: Untagged
@@ -2189,6 +2227,22 @@ MonoBehaviour:
   - {fileID: 6461728039313052631}
   _shaderType: 4
   DebugOutput: 0
+--- !u!114 &5315365569748729217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528333054990766143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames:
+  - fx_TickBloodHIt
+  - bloodchunks
+  - BloodDrops
 --- !u!1 &7528333055282934750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333055282934751}
   - component: {fileID: 5130206787103615383}
+  - component: {fileID: 6643718019654675043}
   m_Layer: 0
   m_Name: Gib3
   m_TagString: Untagged
@@ -2238,6 +2293,22 @@ MonoBehaviour:
   - {fileID: 3027256713500462108}
   _shaderType: 4
   DebugOutput: 0
+--- !u!114 &6643718019654675043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528333055282934750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames:
+  - fx_TickBloodHIt
+  - bloodchunks
+  - BloodDrops
 --- !u!1 &7585525758440564197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,12 +2476,12 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8149644553967219266}
-  m_ConnectedBody: {fileID: 508330281154199937}
+  m_ConnectedBody: {fileID: 7585525758440563994}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.41839918, y: -0.07493788, z: 0.42575544}
+  m_ConnectedAnchor: {x: 0.506911, y: 0.3286622, z: -0.000000045776368}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -2468,7 +2539,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2709381909061738695}
   - component: {fileID: 6381154506914925744}
-  - component: {fileID: 8800391634278583254}
   m_Layer: 0
   m_Name: deer_gib_04
   m_TagString: Untagged
@@ -2544,22 +2614,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.21008794, y: -0.25049657, z: 0.0042149574}
     m_Extent: {x: 0.45593268, y: 0.43998462, z: 0.23087898}
   m_DirtyAABB: 0
---- !u!54 &8800391634278583254
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8800391634278583249}
-  serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &9203734482685936062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,12 +2685,12 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9203734482685936062}
-  m_ConnectedBody: {fileID: 9213393605422071544}
+  m_ConnectedBody: {fileID: 4353269862820457850}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.29648164, y: -0.05140102, z: 0.4804489}
+  m_ConnectedAnchor: {x: 0.5552857, y: -0.02250847, z: -0.000000045776368}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -2680,7 +2734,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7192264728118952981}
   - component: {fileID: 6461728039313052631}
-  - component: {fileID: 9213393605422071544}
   m_Layer: 0
   m_Name: deer_gib_06
   m_TagString: Untagged
@@ -2757,19 +2810,3 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.5063775, y: -0.02751799, z: 0.062025912}
     m_Extent: {x: 0.5603389, y: 0.28014416, z: 0.15777206}
   m_DirtyAABB: 0
---- !u!54 &9213393605422071544
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9213393605422071547}
-  serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1

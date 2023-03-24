@@ -17,6 +17,8 @@ namespace Unforgibbable
 
         internal static AssetBundle? _bundle;
         internal static GameObject? _gibObject = null!;
+        internal static GameObject? devuix = null!;
+        internal static GameObject? ingameDevUIX = null!;
         public void Awake()
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
@@ -24,7 +26,12 @@ namespace Unforgibbable
             harmony.PatchAll(assembly);
 
             _bundle = Utilities.LoadAssetBundle("gibmeplz");
-            if (_bundle != null) _gibObject = _bundle.LoadAsset<GameObject>("deer_gibs");
+            if (_bundle != null)
+            {
+                _gibObject = _bundle.LoadAsset<GameObject>("deer_gibs");
+                devuix = _bundle.LoadAsset<GameObject>("DevUI");
+            }
+            
         }
     }
 }
