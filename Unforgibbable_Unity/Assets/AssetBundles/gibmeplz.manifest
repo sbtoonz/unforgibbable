@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 89442921
+CRC: 2890130155
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bbe32ac6a5a21d26daf8de76e0a5753d
+    Hash: 0a0b2210407c2a273079ea9340319bbb
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 58d7c0b3fe0eb1ffa9c13fb9a584883c
+    Hash: 974df58f6800511edbb2b7033df0547c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -28,6 +28,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+- Class: 114
   Script: {fileID: -697670096, guid: 1e5eba4f196255a48a608a7b9d58fac4, type: 3}
 - Class: 114
   Script: {fileID: 1521249158, guid: 1e5eba4f196255a48a608a7b9d58fac4, type: 3}
@@ -38,15 +40,23 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 40fb77e8476cf8946b55239dcac0eda5, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 276f99ff17b55af4888103647be0c8fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -74,6 +84,10 @@ SerializeReferenceClassIdentifiers:
   ClassName: TMPro.KerningTable
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.TMP_Character
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Dropdown/DropdownEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Dropdown/OptionDataList
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.TMP_FontFeatureTable
 - AssemblyName: Unity.TextMeshPro
@@ -109,9 +123,15 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Navigation
 - AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ScrollRect/ScrollRectEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Scrollbar/ScrollEvent
+- AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Slider/SliderEvent
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Toggle/ToggleEvent
 - AssemblyName: assembly_valheim
   ClassName: EffectList
 - AssemblyName: assembly_valheim
@@ -121,4 +141,5 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Prefab_Instance/deer_gibs.prefab
 - Assets/Prefab_Instance/DevUI.prefab
+- Assets/Prefab_Instance/boar_gibs.prefab
 Dependencies: []

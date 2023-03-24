@@ -11,30 +11,54 @@ namespace Unforgibbable
             public static void Prefix(ZNetScene __instance)
             {
                 if(__instance.m_prefabs.Count<=0 )return;
-                __instance.m_prefabs.Add(UnforgibbableMod._gibObject);
+                __instance.m_prefabs.Add(UnforgibbableMod.deer_gibs);
                 __instance.m_prefabs.Add(UnforgibbableMod.devuix);
+                __instance.m_prefabs.Add(UnforgibbableMod.boar_gibs);
             }
             
             public static void Postfix(ZNetScene __instance)
             {
                 if(__instance.m_prefabs.Count<=0 || __instance.GetPrefab("Amber") == null)return;
                 __instance.m_prefabs.Find(x => x.name == "Deer").gameObject.GetComponent<Character>().m_deathEffects
-                    .m_effectPrefabs[1].m_prefab = UnforgibbableMod._gibObject;
+                    .m_effectPrefabs[1].m_prefab = UnforgibbableMod.deer_gibs;
+                
+                __instance.m_prefabs.Find(x => x.name == "Boar").gameObject.GetComponent<Character>().m_deathEffects
+                    .m_effectPrefabs[1].m_prefab = UnforgibbableMod.boar_gibs;
 
-
-                if (UnforgibbableMod._gibObject == null) return;
-                var gibber = UnforgibbableMod._gibObject.gameObject.GetComponent<Gibber>();
-                var deer_hit = __instance.GetPrefab("vfx_deer_hit");
-                var deer_death = __instance.GetPrefab("vfx_deer_death");
+                if (UnforgibbableMod.deer_gibs == null) return;
+                if (UnforgibbableMod.boar_gibs == null) return;
+                var deerGibber = UnforgibbableMod.deer_gibs.gameObject.GetComponent<Gibber>();
+                var boarGibber = UnforgibbableMod.boar_gibs.gameObject.GetComponent<Gibber>();
+                var deerHit = __instance.GetPrefab("vfx_deer_hit");
+                var deerDeath = __instance.GetPrefab("vfx_deer_death");
+                var boarHit = __instance.GetPrefab("vfx_boar_hit");
+                var boarDeath = __instance.GetPrefab("vfx_boar_death");
                 var burst = new ParticleSystem.Burst(0, new ParticleSystem.MinMaxCurve(3500, 5000), 2, 0.01f);
                 burst.probability = 1;
-                deer_hit.GetComponent<ParticleSystem>().emission.SetBurst(0, burst);
-                deer_hit.transform.Find("blood_drops").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0, burst);
-                deer_hit.transform.Find("bloodchunks").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0,  burst);
-                deer_death.transform.Find("vfx_BloodHit 1").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0,  burst);
-                gibber.m_gibHitEffect = __instance.GetPrefab("vfx_deer_hit");
-                gibber.m_gibDestroyEffect = deer_death;
-                gibber.m_punchEffector.m_effectPrefabs[0].m_prefab =  __instance.GetPrefab("vfx_deer_hit");
+                
+                
+                deerHit.GetComponent<ParticleSystem>().emission.SetBurst(0, burst);
+                deerHit.transform.Find("blood_drops").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0, burst);
+                deerHit.transform.Find("bloodchunks").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0,  burst);
+                deerDeath.transform.Find("vfx_BloodHit 1").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0,  burst);
+                
+                boarHit.GetComponent<ParticleSystem>().emission.SetBurst(0, burst);
+                boarHit.transform.Find("blood_drops").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0, burst);
+                boarHit.transform.Find("bloodchunks").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0,  burst);
+                boarDeath.transform.Find("vfx_BloodHit 1").gameObject.GetComponent<ParticleSystem>().emission.SetBurst(0,  burst);
+                
+                
+                deerGibber.m_gibHitEffect = deerHit;
+                deerGibber.m_gibDestroyEffect = deerDeath;
+                deerGibber.m_punchEffector.m_effectPrefabs[0].m_prefab =  deerHit;
+                
+                
+                boarGibber.m_gibHitEffect = boarHit;
+                boarGibber.m_gibDestroyEffect = boarDeath;
+                boarGibber.m_punchEffector.m_effectPrefabs[0].m_prefab =  boarHit;
+                
+                
+                
             }
         }
 
