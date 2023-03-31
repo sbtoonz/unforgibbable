@@ -9,9 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Neck
   m_Shader: {fileID: 4800000, guid: 073287233112af2438a3ee1761caad81, type: 3}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: _EMISSION _TWOSIDEDNORMALS_ON
   m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -84,7 +84,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Style: 0
-    - _TwoSidedNormals: 0
+    - _TwoSidedNormals: 1
     - _UVSec: 0
     - _UseGlossmap: 0
     - _UseStyles: 0

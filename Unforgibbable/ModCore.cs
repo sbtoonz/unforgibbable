@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using BepInEx;
 using BepInEx.Configuration;
@@ -18,8 +19,10 @@ namespace Unforgibbable
         internal static AssetBundle? _bundle;
         internal static GameObject? deer_gibs = null!;
         internal static GameObject? boar_gibs = null!;
+        internal static GameObject? neck_gibs = null!;
         internal static GameObject? devuix = null!;
         internal static GameObject? ingameDevUIX = null!;
+        internal static List<GameObject> gorefabs = new List<GameObject>();
         public void Awake()
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
@@ -31,9 +34,9 @@ namespace Unforgibbable
             {
                 deer_gibs = _bundle.LoadAsset<GameObject>("deer_gibs");
                 boar_gibs = _bundle.LoadAsset<GameObject>("boar_gibs");
+                neck_gibs = _bundle.LoadAsset<GameObject>("neck_gibs");
                 devuix = _bundle.LoadAsset<GameObject>("DevUI");
             }
-            
         }
     }
 }

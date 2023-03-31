@@ -118,13 +118,11 @@
     <Compile Include="..\Unforgibbable_Unity\Assets\Scripts\DragHandler.cs">
       <Link>Monoscripts\DragHandler.cs</Link>
     </Compile>
-    <Compile Include="..\Unforgibbable_Unity\Assets\Scripts\PrefabGrabber.cs">
-      <Link>Monoscripts\PrefabGrabber.cs</Link>
-    </Compile>
     <Compile Include="..\Unforgibbable_Unity\Assets\Scripts\ShaderReplacerNew.cs">
       <Link>Monoscripts\ShaderReplacerNew.cs</Link>
     </Compile>
     <Compile Include="ModCore.cs" />
+    <Compile Include="Monoscripts\PrefabGrabber.cs" />
     <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities.cs" />

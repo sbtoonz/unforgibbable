@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabNames:
-  - fx_TickBloodHIt
+  - fx_TickBloodHit
   - bloodchunks
   - BloodDrops
 --- !u!1 &7528333053961607537
@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabNames:
-  - fx_TickBloodHIt
+  - fx_TickBloodHit
   - bloodchunks
   - BloodDrops
 --- !u!1 &7528333054188657804
@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabNames:
-  - fx_TickBloodHIt
+  - fx_TickBloodHit
   - bloodchunks
   - BloodDrops
 --- !u!1 &7528333054642131373
@@ -2174,7 +2174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabNames:
-  - fx_TickBloodHIt
+  - fx_TickBloodHit
   - bloodchunks
   - BloodDrops
 --- !u!1 &7528333054990766143
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabNames:
-  - fx_TickBloodHIt
+  - fx_TickBloodHit
   - bloodchunks
   - BloodDrops
 --- !u!1 &7528333055282934750
@@ -2306,7 +2306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabNames:
-  - fx_TickBloodHIt
+  - fx_TickBloodHit
   - bloodchunks
   - BloodDrops
 --- !u!1 &7585525758440564197

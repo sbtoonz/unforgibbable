@@ -33,11 +33,20 @@ public class DevUI : MonoBehaviour
     {
         _gibbers.Add(ZNetScene.instance.GetPrefab("deer_gibs").GetComponent<Gibber>());
         _gibbers.Add(ZNetScene.instance.GetPrefab("boar_gibs").GetComponent<Gibber>());
+        _gibbers.Add(ZNetScene.instance.GetPrefab("neck_gibs").GetComponent<Gibber>());
         current_gibber = _gibbers[0];
         m_minVel.onValueChanged.AddListener(delegate(float num) { OnMinVelChang(num); });
+        m_minVel.value = current_gibber.m_minVel;
+        
         m_maxVel.onValueChanged.AddListener(delegate(float num) { OnMaxVelChang(num); });
+        m_maxVel.value = current_gibber.m_maxVel;
+        
         m_maxRot.onValueChanged.AddListener(delegate(float num) { OnMaxRotChang(num); });
+        m_maxRot.value = current_gibber.m_maxRotVel;
+        
         m_ImpactDir.onValueChanged.AddListener(delegate(float num) {  OnImpactDirChang(num);});
+        m_ImpactDir.value = current_gibber.m_impactDirectionMix;
+        
         minvel.SetText(current_gibber.m_minVel.ToString());
         maxvel.SetText(current_gibber.m_maxVel.ToString());
         maxrot.SetText(current_gibber.m_maxRotVel.ToString());
@@ -72,6 +81,10 @@ public class DevUI : MonoBehaviour
     {
         minvel.SetText(num.ToString());
         current_gibber.m_minVel = num;
+        m_minVel.value = current_gibber.m_minVel;
+        m_maxVel.value = current_gibber.m_maxVel;
+        m_maxRot.value = current_gibber.m_maxRotVel;
+        m_ImpactDir.value = current_gibber.m_impactDirectionMix;
     }
     
     public void OnMinVelChang(string num)
