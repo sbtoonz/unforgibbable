@@ -34,6 +34,7 @@ public class DevUI : MonoBehaviour
         _gibbers.Add(ZNetScene.instance.GetPrefab("deer_gibs").GetComponent<Gibber>());
         _gibbers.Add(ZNetScene.instance.GetPrefab("boar_gibs").GetComponent<Gibber>());
         _gibbers.Add(ZNetScene.instance.GetPrefab("neck_gibs").GetComponent<Gibber>());
+        _gibbers.Add(ZNetScene.instance.GetPrefab("troll_gibs").GetComponent<Gibber>());
         current_gibber = _gibbers[0];
         m_minVel.onValueChanged.AddListener(delegate(float num) { OnMinVelChang(num); });
         m_minVel.value = current_gibber.m_minVel;

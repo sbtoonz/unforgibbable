@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 277252676456430954}
   - component: {fileID: 277252676456430964}
   - component: {fileID: 277252676456430965}
+  - component: {fileID: 1532550367029232919}
   m_Layer: 0
   m_Name: deer_gib_03_bone1
   m_TagString: Untagged
@@ -195,6 +196,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1532550367029232919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277252676456430967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &508330281154199936
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +535,7 @@ GameObject:
   - component: {fileID: 4703636352802514407}
   - component: {fileID: 8553524728311168449}
   - component: {fileID: 1080389239453503782}
+  - component: {fileID: 8087651725867073520}
   m_Layer: 0
   m_Name: deer_gib_01_bone1
   m_TagString: Untagged
@@ -632,6 +647,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38, y: 0.25, z: 0.25}
   m_Center: {x: -0.17, y: -0.28, z: 0}
+--- !u!114 &8087651725867073520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327664885320604807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &2650263189572266349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,6 +1538,7 @@ GameObject:
   - component: {fileID: 6825347091265904105}
   - component: {fileID: 6825347091265904110}
   - component: {fileID: 6825347091265904111}
+  - component: {fileID: 4696546912348816792}
   m_Layer: 0
   m_Name: deer_gib_02_bone1
   m_TagString: Untagged
@@ -1608,6 +1637,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4696546912348816792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6825347091265904104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &7118368590205361084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1771,7 @@ GameObject:
   - component: {fileID: 7148642045159991418}
   - component: {fileID: 7148642045159991416}
   - component: {fileID: 7148642045159991419}
+  - component: {fileID: 5282718816713756402}
   m_Layer: 0
   m_Name: deer_gib_04_bone1
   m_TagString: Untagged
@@ -1827,6 +1870,19 @@ CapsuleCollider:
   m_Height: 0.31
   m_Direction: 0
   m_Center: {x: 0.03, y: -0.12, z: 0}
+--- !u!114 &5282718816713756402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148642045159991365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &7318491434671088965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,7 +1979,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333053704533090}
   - component: {fileID: 2344275428528939622}
-  - component: {fileID: 4749702304096191013}
   m_Layer: 0
   m_Name: Gib5
   m_TagString: Untagged
@@ -1963,22 +2018,6 @@ MonoBehaviour:
   - {fileID: 2223123868458459595}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &4749702304096191013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528333053704533101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames:
-  - fx_TickBloodHit
-  - bloodchunks
-  - BloodDrops
 --- !u!1 &7528333053961607537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,7 +2028,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333053961607542}
   - component: {fileID: 5031716259295801034}
-  - component: {fileID: 1636525384357270351}
   m_Layer: 0
   m_Name: Gib2
   m_TagString: Untagged
@@ -2029,22 +2067,6 @@ MonoBehaviour:
   - {fileID: 3304201459185004480}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &1636525384357270351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528333053961607537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames:
-  - fx_TickBloodHit
-  - bloodchunks
-  - BloodDrops
 --- !u!1 &7528333054188657804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,7 +2077,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333054188657805}
   - component: {fileID: 2012717359747506673}
-  - component: {fileID: 6144907154496301127}
   m_Layer: 0
   m_Name: Gib1
   m_TagString: Untagged
@@ -2095,22 +2116,6 @@ MonoBehaviour:
   - {fileID: 2816935774930207643}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &6144907154496301127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528333054188657804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames:
-  - fx_TickBloodHit
-  - bloodchunks
-  - BloodDrops
 --- !u!1 &7528333054642131373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,7 +2126,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333054642131362}
   - component: {fileID: 6775199120462881579}
-  - component: {fileID: 1297887563858745817}
   m_Layer: 0
   m_Name: Gib4
   m_TagString: Untagged
@@ -2161,22 +2165,6 @@ MonoBehaviour:
   - {fileID: 6381154506914925744}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &1297887563858745817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528333054642131373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames:
-  - fx_TickBloodHit
-  - bloodchunks
-  - BloodDrops
 --- !u!1 &7528333054990766143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,7 +2175,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333054990766140}
   - component: {fileID: 7538206622090349333}
-  - component: {fileID: 5315365569748729217}
   m_Layer: 0
   m_Name: Gib6
   m_TagString: Untagged
@@ -2227,22 +2214,6 @@ MonoBehaviour:
   - {fileID: 6461728039313052631}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &5315365569748729217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528333054990766143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames:
-  - fx_TickBloodHit
-  - bloodchunks
-  - BloodDrops
 --- !u!1 &7528333055282934750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528333055282934751}
   - component: {fileID: 5130206787103615383}
-  - component: {fileID: 6643718019654675043}
   m_Layer: 0
   m_Name: Gib3
   m_TagString: Untagged
@@ -2293,22 +2263,6 @@ MonoBehaviour:
   - {fileID: 3027256713500462108}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &6643718019654675043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528333055282934750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames:
-  - fx_TickBloodHit
-  - bloodchunks
-  - BloodDrops
 --- !u!1 &7585525758440564197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,6 +2385,7 @@ GameObject:
   - component: {fileID: 8149644553967219267}
   - component: {fileID: 8149644553967219265}
   - component: {fileID: 8149644553967219264}
+  - component: {fileID: 7365924695226359830}
   m_Layer: 0
   m_Name: deer_gib_05_bone1
   m_TagString: Untagged
@@ -2529,6 +2484,19 @@ CapsuleCollider:
   m_Height: 0.55
   m_Direction: 0
   m_Center: {x: -0.15, y: 0, z: 0}
+--- !u!114 &7365924695226359830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8149644553967219266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &8800391634278583249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,6 +2594,7 @@ GameObject:
   - component: {fileID: 9203734482685936061}
   - component: {fileID: 9203734482685936063}
   - component: {fileID: 9203734482685936060}
+  - component: {fileID: 5990308380647392371}
   m_Layer: 0
   m_Name: deer_gib_06_bone1
   m_TagString: Untagged
@@ -2724,6 +2693,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5990308380647392371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203734482685936062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &9213393605422071547
 GameObject:
   m_ObjectHideFlags: 0

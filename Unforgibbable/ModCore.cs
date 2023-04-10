@@ -20,6 +20,7 @@ namespace Unforgibbable
         internal static GameObject? deer_gibs = null!;
         internal static GameObject? boar_gibs = null!;
         internal static GameObject? neck_gibs = null!;
+        internal static GameObject? troll_gibs = null!;
         internal static GameObject? devuix = null!;
         internal static GameObject? ingameDevUIX = null!;
         internal static List<GameObject> gorefabs = new List<GameObject>();
@@ -30,13 +31,12 @@ namespace Unforgibbable
             harmony.PatchAll(assembly);
 
             _bundle = Utilities.LoadAssetBundle("gibmeplz");
-            if (_bundle != null)
-            {
-                deer_gibs = _bundle.LoadAsset<GameObject>("deer_gibs");
-                boar_gibs = _bundle.LoadAsset<GameObject>("boar_gibs");
-                neck_gibs = _bundle.LoadAsset<GameObject>("neck_gibs");
-                devuix = _bundle.LoadAsset<GameObject>("DevUI");
-            }
+            if (_bundle == null) return;
+            deer_gibs = _bundle.LoadAsset<GameObject>("deer_gibs");
+            boar_gibs = _bundle.LoadAsset<GameObject>("boar_gibs");
+            neck_gibs = _bundle.LoadAsset<GameObject>("neck_gibs");
+            troll_gibs = _bundle.LoadAsset<GameObject>("troll_gibs");
+            devuix = _bundle.LoadAsset<GameObject>("DevUI");
         }
     }
 }

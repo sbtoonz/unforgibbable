@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7162313561469775620}
   - component: {fileID: 6037667801108812441}
-  - component: {fileID: 7060194087757801753}
   m_Layer: 0
   m_Name: Gib02
   m_TagString: Untagged
@@ -50,19 +49,6 @@ MonoBehaviour:
   - {fileID: 8382809324518643365}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &7060194087757801753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290907896208701458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames: []
 --- !u!1 &400540364798253722
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,6 +60,7 @@ GameObject:
   - component: {fileID: 5492576925764026656}
   - component: {fileID: 3997794862740021761}
   - component: {fileID: 4184415642103516627}
+  - component: {fileID: 4508204917621655464}
   m_Layer: 0
   m_Name: neck_gib_02_bone_01
   m_TagString: Untagged
@@ -158,6 +145,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4508204917621655464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400540364798253722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &839847550237304090
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +362,6 @@ GameObject:
   m_Component:
   - component: {fileID: 358795680251662256}
   - component: {fileID: 7280832295553847647}
-  - component: {fileID: 2297334899061686160}
   m_Layer: 0
   m_Name: Gib01
   m_TagString: Untagged
@@ -402,19 +401,6 @@ MonoBehaviour:
   - {fileID: 7734223775971105834}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &2297334899061686160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838849195233443965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames: []
 --- !u!1 &2302906659751947023
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +527,7 @@ GameObject:
   - component: {fileID: 560982645955334425}
   - component: {fileID: 6628790831427219651}
   - component: {fileID: 6834095132860409340}
+  - component: {fileID: 3483058881755848757}
   m_Layer: 0
   m_Name: neck_gib_05_bone_01
   m_TagString: Untagged
@@ -625,6 +612,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &3483058881755848757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3533925794209881321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &3760473936947811167
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 4233879307715527302}
   - component: {fileID: 6614537624691135453}
   - component: {fileID: 1464788013048964825}
+  - component: {fileID: 7807442859644649102}
   m_Layer: 0
   m_Name: neck_gib_04_bone_01
   m_TagString: Untagged
@@ -915,6 +916,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7807442859644649102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5098199640854461968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &5361561518610728768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1051,7 @@ GameObject:
   - component: {fileID: 8326225334190158312}
   - component: {fileID: 1095860442713923281}
   - component: {fileID: 7431685207461186742}
+  - component: {fileID: 112462908248972856}
   m_Layer: 0
   m_Name: neck_gib_03_bone_01
   m_TagString: Untagged
@@ -1135,6 +1150,19 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &112462908248972856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556876681122541548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &5885427317654020673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1173,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8553012495077585372}
   - component: {fileID: 3054745010755738127}
-  - component: {fileID: 7475009067972127166}
   m_Layer: 0
   m_Name: Gib05
   m_TagString: Untagged
@@ -1185,19 +1212,6 @@ MonoBehaviour:
   - {fileID: 7558249687026386478}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &7475009067972127166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5885427317654020673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames: []
 --- !u!1 &5920437682802947010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1333,7 @@ GameObject:
   - component: {fileID: 4349838921527648744}
   - component: {fileID: 8544971823748714867}
   - component: {fileID: 8344617993074648220}
+  - component: {fileID: 5332042413158124136}
   m_Layer: 0
   m_Name: neck_gib_01_bone_01
   m_TagString: Untagged
@@ -1417,6 +1432,19 @@ CapsuleCollider:
   m_Height: 0.23972625
   m_Direction: 0
   m_Center: {x: -0.06502692, y: -0.006166786, z: 4.5587942e-10}
+--- !u!114 &5332042413158124136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927932663579392544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabNames: []
 --- !u!1 &5958190673602525457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1957,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8977110247997078691}
   - component: {fileID: 7644443430620935382}
-  - component: {fileID: 6895726441950089922}
   m_Layer: 0
   m_Name: Gib03
   m_TagString: Untagged
@@ -1969,19 +1996,6 @@ MonoBehaviour:
   - {fileID: 4447613083750202742}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &6895726441950089922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7248673301982176967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames: []
 --- !u!1 &7537961814008551699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,7 +2225,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6977156400130691515}
   - component: {fileID: 5816959448836502739}
-  - component: {fileID: 3024035193985194369}
   m_Layer: 0
   m_Name: Gib04
   m_TagString: Untagged
@@ -2251,19 +2264,6 @@ MonoBehaviour:
   - {fileID: 8384462087723910428}
   _shaderType: 4
   DebugOutput: 0
---- !u!114 &3024035193985194369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8261997516202721514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82c96bc031243c478b6f1de75c95167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNames: []
 --- !u!1 &8339025376610467053
 GameObject:
   m_ObjectHideFlags: 0

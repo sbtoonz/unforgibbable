@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2757884830
+CRC: 157431522
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 23c4d872673b3c894843a21aedc87830
+    Hash: bb7f63012b895a3b3cf363c3cc00b85d
   TypeTreeHash:
     serializedVersion: 2
     Hash: f1f15c5f300a065bdb92baf861248480
@@ -139,8 +139,10 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: assembly_valheim
   ClassName: Gibber/GibbData
 Assets:
+- Assets/Prefab_Instance/grey_gibs.prefab
 - Assets/Prefab_Instance/deer_gibs.prefab
 - Assets/Prefab_Instance/DevUI.prefab
+- Assets/Prefab_Instance/troll_gibs.prefab
 - Assets/Prefab_Instance/neck_gibs.prefab
 - Assets/Prefab_Instance/boar_gibs.prefab
 Dependencies: []
